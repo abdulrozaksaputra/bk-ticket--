@@ -18,7 +18,7 @@ class EventSeeder extends Seeder
                 'lokasi' => 'Stadion Utama',
                 'lokasi_id' => 1,
                 'kategori_id' => 1,
-                'gambar' => 'events/konser_rock.jpg',
+                'gambar' => 'konser_rock.jpg',
             ],
             [
                 'user_id' => 1,
@@ -28,7 +28,7 @@ class EventSeeder extends Seeder
                 'lokasi' => 'Galeri Seni Kota',
                 'lokasi_id' => 2,
                 'kategori_id' => 2,
-                'gambar' => 'events/pameran_seni.jpg',
+                'gambar' => 'pameran_seni.jpg',
             ],
             [
                 'user_id' => 1,
@@ -38,7 +38,7 @@ class EventSeeder extends Seeder
                 'lokasi' => 'Taman Kota',
                 'lokasi_id' => 3,
                 'kategori_id' => 3,
-                'gambar' => 'events/festival_makanan.jpg',
+                'gambar' => 'festival_makanan.jpg',
             ],
         ];
 

@@ -2,7 +2,7 @@
     <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
     <div class="flex flex-col items-start w-64 min-h-full bg-base-200 is-drawer-close:w-14 is-drawer-open:w-80">
         <div class="flex items-center justify-center w-full p-4">
-            <img src="{{ asset('assets/images/logo_bengkod.svg') }}" alt="Logo">
+            <img src="{{ asset('assets/img/logo_bengkod.svg') }}" alt="Logo">
         </div>
 
         <!-- Sidebar content here -->
@@ -76,9 +76,8 @@
             <li class="{{ request()->routeIs('admin.histories.*') ? 'bg-gray-200 rounded-lg' : '' }}">
                 <a href="{{ route('admin.histories.index') }}"
                     class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="History">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 6 12 12 16 14"></polyline>
                     </svg>
@@ -90,9 +89,8 @@
             <li class="{{ request()->routeIs('admin.payment-types.*') ? 'bg-gray-200 rounded-lg' : '' }}">
                 <a href="{{ route('admin.payment-types.index') }}"
                     class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Tipe Pembayaran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
                         <line x1="1" y1="10" x2="23" y2="10"></line>
                     </svg>

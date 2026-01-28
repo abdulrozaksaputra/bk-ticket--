@@ -16,8 +16,8 @@
                 <div class="shadow card bg-base-100">
                     <figure>
                         <img src="{{ $event->gambar
-                            ? asset('images/events/' . $event->gambar)
-                            : 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' }}"
+    ? asset('assets/img/events/' . $event->gambar)
+    : 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' }}"
                             alt="{{ $event->judul }}" class="object-cover w-full h-96" />
                     </figure>
                     <div class="card-body">
@@ -71,9 +71,8 @@
                                         <div class="flex items-center justify-end gap-2 mt-3">
                                             <button type="button" class="btn btn-sm btn-outline" data-action="dec"
                                                 data-id="{{ $tiket->id }}" aria-label="Kurangi satu">−</button>
-                                            <input id="qty-{{ $tiket->id }}" type="number" min="0"
-                                                max="{{ $tiket->stok }}" value="0"
-                                                class="w-16 text-center input input-bordered"
+                                            <input id="qty-{{ $tiket->id }}" type="number" min="0" max="{{ $tiket->stok }}"
+                                                value="0" class="w-16 text-center input input-bordered"
                                                 data-id="{{ $tiket->id }}" />
                                             <button type="button" class="btn btn-sm btn-outline" data-action="inc"
                                                 data-id="{{ $tiket->id }}" aria-label="Tambah satu">+</button>
@@ -176,7 +175,7 @@
         // Jadikan tiket global agar bisa diakses di fungsi lain
         const tickets = {
             @foreach ($event->tikets as $tiket)
-                {{ $tiket->id }}: {
+                    {{ $tiket->id }}: {
                     id: {{ $tiket->id }},
                     price: {{ $tiket->harga ?? 0 }},
                     stock: {{ $tiket->stok }},
@@ -185,7 +184,7 @@
             @endforeach
         };
 
-        (function() {
+        (function () {
             // batas stok yang dianggap "hampir habis"
             const LOW_STOCK_THRESHOLD = 10;
 
@@ -290,7 +289,7 @@
             }
 
             // Checkout modal
-            window.openCheckout = function() {
+            window.openCheckout = function () {
                 const modal = document.getElementById('checkout_modal');
                 const modalItems = document.getElementById('modalItems');
                 const modalTotal = document.getElementById('modalTotal');

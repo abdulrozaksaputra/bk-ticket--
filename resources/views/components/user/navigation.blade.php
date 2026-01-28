@@ -9,7 +9,7 @@
             </div>
         </div>
         <a href="{{ route('home') }}">
-            <img src={{ asset('assets/images/logo_bengkod.svg') }} />
+            <img src={{ asset('assets/img/logo_bengkod.svg') }} />
         </a>
     </div>
     <div class="navbar-center hidden lg:flex">

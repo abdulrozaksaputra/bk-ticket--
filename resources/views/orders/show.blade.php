@@ -10,7 +10,7 @@
         <div class="shadow-md card bg-base-100">
             <div class="lg:flex ">
                 <div class="p-4 lg:w-1/3">
-                    <img src="{{ $order->event?->gambar ? asset('images/events/' . $order->event->gambar) : 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' }}"
+                    <img src="{{ $order->event?->gambar ? asset('assets/img/events/' . $order->event->gambar) : 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' }}"
                         alt="{{ $order->event?->judul ?? 'Event' }}" class="object-cover w-full mb-2" />
                     <h2 class="text-lg font-semibold">{{ $order->event?->judul ?? 'Event' }}</h2>
                     <p class="mt-1 text-sm text-gray-500">{{ $order->event?->lokasiEvent?->nama ?? '' }}</p>
